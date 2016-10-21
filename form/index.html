@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Lawrence">
+	<title>Sign Up Form</title>
+
+	<!-- Cascading Style Sheets  -->
+	<link href="main.css" rel="stylesheet">
+</head>
+<body>
+     <div style="display:flex;justify-content:center;align-items:center;">
+       <form>
+       
+       <!--Facebook sign up button -->
+       		<input type="submit" value="Sign Up With Facebook" class="facebook">
+       	<br>
+
+       <!--Google Sign up button -->
+       	<br>
+       		<input type="submit" value="Sign Up With Google" class="google">
+       
+       	      
+
+       	       <div class="container"><h1>or</h1></div>
+         <!--email input -->
+       	<label for="email"></label><br>
+       	<input type="text" id="email" placeholder="Email">
+        <br>
+
+         <!--password input -->
+       	<label for="password"></label><br>
+       	<input type="text" id="password" placeholder="Password">
+      
+         	<br>
+        <!--Sign up button  -->
+       	<br>
+        <input type="submit" value="Sign Up" class="signup">
+         
+
+       
+       	<p>Have an account?</p>
+
+       	<!--login button -->
+        <input onclick="myFunction()" type="submit" value="Log In" class="login">
+    
+       </form>
+      </div>
+      
+      <!-- JavaScript  -->
+      <script>
+      	function myFunction() {
+      		window.open('auth/google', '_blank');
+      alert("You're are now  logged in");
+      
+     }
+      </script>
+</body>
+</html>
